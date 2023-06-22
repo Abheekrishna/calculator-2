@@ -5,6 +5,7 @@ const allClearBtn = document.querySelector('[data-allClear]');
 const deleteBtn = document.querySelector('[data-delete]');
 const previousNumberTextDiv = document.querySelector('[data-previousNumberText]');
 const currentNumberTextDiv = document.querySelector('[data-currentNumberText]');
+const year = document.getElementById('year');
 
 let haveDot = false;
 let currentNumber = '';
@@ -78,3 +79,6 @@ deleteBtn.addEventListener('click', () => {
     currentNumber = currentNumber.toString().slice(0, -1);
     currentNumberTextDiv.innerText = currentNumber;
 })
+
+const newYear = (new Date()).getFullYear();
+year.innerText = newYear;
