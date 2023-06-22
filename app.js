@@ -7,14 +7,6 @@ const previousNumberTextDiv = document.querySelector('[data-previousNumberText]'
 const currentNumberTextDiv = document.querySelector('[data-currentNumberText]');
 const year = document.getElementById('year');
 
-const audio = new Audio('./sound/onLoad.mp3');
-
-const toggleAudio = () => {
-    audio.currentTime = 0;
-    audio.play();
-}
-document.addEventListener('DOMContentLoaded', toggleAudio)
-
 
 let haveDot = false;
 let currentNumber = '';
