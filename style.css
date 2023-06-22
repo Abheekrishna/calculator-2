@@ -15,7 +15,7 @@
     width: fit-content;
     margin-top: 50px;
     border-radius: 20px;
-    gap: 5px;
+    gap: 8px;
     background-color: rgb(36, 36, 36);
     box-shadow:  0 0 25px rgba(0, 0, 0, 0.5);
 }
@@ -52,7 +52,7 @@ body {
 }
 .calculator > button {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     border-radius: 20px;
     border: 1px solid #fff;
     background-color: rgb(36, 36, 36);
