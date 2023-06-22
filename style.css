@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6, 80px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    margin-top: 50px;
+}
+.output {
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(255, 255, 255);
+    color: rgb(36, 36, 36);
+    justify-content: space-around;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.allClear {
+    grid-column: 1 / 3;
+}
+.delete {
+    grid-column: 3 / 5;
+}
+.previousNumberText {
+    margin-right: 15px;
+    font-size: 1rem;
+}
+.currentNumberText {
+    margin-right: 15px;
+    font-size: 1.8rem;
+}
+.calculator > button {
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    background-color: rgb(36, 36, 36);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.calculator > button:hover {
+    background-color: rgb(53, 53, 53);
+}
+.calculator > button:active {
+    background-color: rgb(36, 36, 36);
+}
