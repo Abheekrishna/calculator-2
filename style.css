@@ -77,3 +77,10 @@ footer {
 a {
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    .calculator {
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: repeat(6, 70px);
+    }
+}
