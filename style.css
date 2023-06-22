@@ -44,6 +44,7 @@ body {
 .previousNumberText {
     margin-right: 15px;
     font-size: 1rem;
+    opacity: 0.1;
 }
 .currentNumberText {
     margin-right: 15px;
